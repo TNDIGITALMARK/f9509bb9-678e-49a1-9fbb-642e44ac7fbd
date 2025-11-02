@@ -25,28 +25,28 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="/services"
+            href="/shop"
             className="text-sm font-medium text-foreground transition-colors hover:text-primary"
           >
-            Services
+            Shop
           </Link>
           <Link
-            href="/portfolio"
+            href="/categories"
             className="text-sm font-medium text-foreground transition-colors hover:text-primary"
           >
-            Portfolio
+            Categories
           </Link>
           <Link
-            href="/testimonials"
+            href="/deals"
             className="text-sm font-medium text-foreground transition-colors hover:text-primary"
           >
-            Testimonials
+            Deals
           </Link>
           <Link
             href="/about"
             className="text-sm font-medium text-foreground transition-colors hover:text-primary"
           >
-            About Us
+            About
           </Link>
           <Link
             href="/contact"
@@ -56,11 +56,12 @@ export function Header() {
           </Link>
         </nav>
 
-        {/* CTA Button */}
+        {/* Cart Button */}
         <Button
-          className="rounded-full bg-primary px-6 py-2 text-sm font-medium text-white shadow-md transition-all hover:bg-primary/90 hover:shadow-lg"
+          className="gap-2 rounded-full bg-primary px-6 py-2 text-sm font-medium text-white shadow-md transition-all hover:bg-primary/90 hover:shadow-lg"
         >
-          Get Started
+          <ShoppingBag className="h-4 w-4" />
+          Cart (0)
         </Button>
       </div>
     </header>

@@ -92,32 +92,32 @@ export default function DealsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-red-600 to-red-500 py-12 text-white md:py-16">
+      <section className="bg-white py-12 md:py-16">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 px-6 py-2 backdrop-blur-sm">
-              <Tag className="h-5 w-5" />
-              <span className="text-sm font-semibold">Limited Time Offers</span>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-red-50 px-6 py-2">
+              <Tag className="h-5 w-5 text-red-600" />
+              <span className="text-sm font-semibold text-red-600">Limited Time Offers</span>
             </div>
-            <h1 className="mb-4 text-4xl font-bold md:text-5xl">
+            <h1 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
               Massive Savings on Tech
             </h1>
-            <p className="mx-auto mb-6 max-w-2xl text-lg opacity-90">
+            <p className="mx-auto mb-6 max-w-2xl text-lg text-muted-foreground">
               Save up to 50% on premium electronics, accessories, and gadgets.
               Shop now before these deals expire!
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-center">
               <div>
-                <div className="text-4xl font-bold">50%</div>
-                <div className="text-sm opacity-80">Max Discount</div>
+                <div className="text-4xl font-bold text-red-600">50%</div>
+                <div className="text-sm text-muted-foreground">Max Discount</div>
               </div>
               <div>
-                <div className="text-4xl font-bold">100+</div>
-                <div className="text-sm opacity-80">Products on Sale</div>
+                <div className="text-4xl font-bold text-red-600">100+</div>
+                <div className="text-sm text-muted-foreground">Products on Sale</div>
               </div>
               <div>
-                <div className="text-4xl font-bold">24/7</div>
-                <div className="text-sm opacity-80">New Deals Daily</div>
+                <div className="text-4xl font-bold text-red-600">24/7</div>
+                <div className="text-sm text-muted-foreground">New Deals Daily</div>
               </div>
             </div>
           </div>

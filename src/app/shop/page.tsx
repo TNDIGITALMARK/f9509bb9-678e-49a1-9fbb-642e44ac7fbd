@@ -160,28 +160,28 @@ export default function ShopPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/80 py-12 text-white md:py-16">
+      <section className="bg-white py-12 md:py-16">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-8 md:grid-cols-2">
             <div>
-              <h1 className="mb-4 text-4xl font-bold md:text-5xl">
+              <h1 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">
                 Shop Premium Tech Products
               </h1>
-              <p className="mb-6 text-lg opacity-90">
+              <p className="mb-6 text-lg text-muted-foreground">
                 Discover our curated collection of high-quality electronics, accessories, and gadgets.
                 Free shipping on orders over $100.
               </p>
               <div className="flex gap-4">
                 <Button
                   size="lg"
-                  className="rounded-full bg-white px-8 py-6 text-base font-medium text-primary hover:bg-white/90"
+                  className="rounded-full bg-primary px-8 py-6 text-base font-medium text-white hover:bg-primary/90"
                 >
                   Shop New Arrivals
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full border-2 border-white bg-transparent px-8 py-6 text-base font-medium text-white hover:bg-white/10"
+                  className="rounded-full border-2 border-primary bg-transparent px-8 py-6 text-base font-medium text-primary hover:bg-primary hover:text-white"
                 >
                   View Deals
                 </Button>
@@ -189,10 +189,10 @@ export default function ShopPage() {
             </div>
             <div className="flex justify-center">
               <div className="text-center">
-                <div className="mb-4 rounded-2xl bg-white/10 p-8 backdrop-blur-sm">
-                  <div className="mb-2 text-5xl font-bold">50%</div>
-                  <div className="text-lg font-medium">OFF</div>
-                  <div className="mt-2 text-sm opacity-80">Selected Items</div>
+                <div className="mb-4 rounded-2xl border-2 border-primary bg-primary/5 p-8">
+                  <div className="mb-2 text-5xl font-bold text-primary">50%</div>
+                  <div className="text-lg font-medium text-foreground">OFF</div>
+                  <div className="mt-2 text-sm text-muted-foreground">Selected Items</div>
                 </div>
               </div>
             </div>

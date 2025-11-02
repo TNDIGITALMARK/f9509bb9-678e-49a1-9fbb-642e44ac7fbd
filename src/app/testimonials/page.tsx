@@ -75,7 +75,7 @@ export default function TestimonialsPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 via-background to-background py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto max-w-4xl px-6 text-center">
           <h1 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
             What Our Clients Say

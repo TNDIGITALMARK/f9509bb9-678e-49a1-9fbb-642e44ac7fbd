@@ -17,45 +17,45 @@ export default function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary/80 py-16 text-white md:py-24">
+      <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-12 md:grid-cols-2">
             {/* Hero Text */}
             <div>
-              <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
+              <h1 className="mb-6 text-4xl font-bold leading-tight text-foreground md:text-5xl">
                 Premium Tech & Electronics Store
               </h1>
-              <p className="mb-8 text-lg opacity-90">
+              <p className="mb-8 text-lg text-muted-foreground">
                 Shop the latest gadgets, accessories, and tech products at unbeatable prices.
                 Free shipping on orders over $100 with our 30-day satisfaction guarantee.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button
                   size="lg"
-                  className="rounded-full bg-white px-8 py-6 text-base font-medium text-primary shadow-md transition-all hover:bg-white/90 hover:shadow-lg"
+                  className="rounded-full bg-primary px-8 py-6 text-base font-medium text-white shadow-md transition-all hover:bg-primary/90 hover:shadow-lg"
                 >
                   Shop Now
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full border-2 border-white bg-transparent px-8 py-6 text-base font-medium text-white transition-all hover:bg-white/10"
+                  className="rounded-full border-2 border-primary bg-transparent px-8 py-6 text-base font-medium text-primary transition-all hover:bg-primary hover:text-white"
                 >
                   View Deals
                 </Button>
               </div>
               <div className="mt-8 flex gap-8">
                 <div>
-                  <div className="text-3xl font-bold">50%</div>
-                  <div className="text-sm opacity-80">Off Select Items</div>
+                  <div className="text-3xl font-bold text-foreground">50%</div>
+                  <div className="text-sm text-muted-foreground">Off Select Items</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">Free</div>
-                  <div className="text-sm opacity-80">Shipping Over $100</div>
+                  <div className="text-3xl font-bold text-foreground">Free</div>
+                  <div className="text-sm text-muted-foreground">Shipping Over $100</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">30-Day</div>
-                  <div className="text-sm opacity-80">Returns</div>
+                  <div className="text-3xl font-bold text-foreground">30-Day</div>
+                  <div className="text-sm text-muted-foreground">Returns</div>
                 </div>
               </div>
             </div>

@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "Blue Online Stores | Professional E-commerce Solutions",
+  description: "Transform your business into a profitable online store in 30 days. Join 200+ successful retailers who trust Blue Online Stores for their e-commerce success.",
 };
 
 export default function RootLayout({

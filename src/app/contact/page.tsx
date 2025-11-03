@@ -13,8 +13,8 @@ export default function ContactPage() {
     name: "",
     email: "",
     phone: "",
-    projectType: "",
-    budget: "",
+    subject: "",
+    orderNumber: "",
     message: ""
   })
 
@@ -22,7 +22,7 @@ export default function ContactPage() {
     e.preventDefault()
     // Handle form submission
     console.log("Form submitted:", formData)
-    alert("Thank you for your message! We'll get back to you within 24 hours.")
+    alert("Thank you for reaching out! Our customer support team will respond within 24 hours.")
   }
 
   const handleChange = (
@@ -42,11 +42,11 @@ export default function ContactPage() {
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto max-w-4xl px-6 text-center">
           <h1 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">
-            Get in Touch
+            We&apos;re Here to Help
           </h1>
           <p className="text-lg text-muted-foreground">
-            Ready to transform your business with a professional online store?
-            Let&apos;s discuss your project and how we can help you succeed.
+            Have a question about your order? Need help with a product? Want to share feedback?
+            Our friendly customer support team is ready to assist you.
           </p>
         </div>
       </section>
@@ -109,48 +109,46 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="projectType" className="mb-2 block text-sm font-medium text-foreground">
-                    Project Type *
+                  <label htmlFor="subject" className="mb-2 block text-sm font-medium text-foreground">
+                    What can we help you with? *
                   </label>
                   <select
-                    id="projectType"
-                    name="projectType"
+                    id="subject"
+                    name="subject"
                     required
-                    value={formData.projectType}
+                    value={formData.subject}
                     onChange={handleChange}
                     className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
-                    <option value="">Select a project type</option>
-                    <option value="new-store">New Store Launch</option>
-                    <option value="redesign">Store Redesign</option>
-                    <option value="migration">Platform Migration</option>
-                    <option value="maintenance">Ongoing Maintenance</option>
+                    <option value="">Select a topic</option>
+                    <option value="order-status">Order Status</option>
+                    <option value="product-question">Product Question</option>
+                    <option value="returns-exchanges">Returns & Exchanges</option>
+                    <option value="shipping">Shipping Information</option>
+                    <option value="technical-issue">Technical Issue</option>
+                    <option value="feedback">Feedback or Suggestion</option>
                     <option value="other">Other</option>
                   </select>
                 </div>
 
                 <div>
-                  <label htmlFor="budget" className="mb-2 block text-sm font-medium text-foreground">
-                    Budget Range
+                  <label htmlFor="orderNumber" className="mb-2 block text-sm font-medium text-foreground">
+                    Order Number (if applicable)
                   </label>
-                  <select
-                    id="budget"
-                    name="budget"
-                    value={formData.budget}
+                  <Input
+                    id="orderNumber"
+                    name="orderNumber"
+                    type="text"
+                    value={formData.orderNumber}
                     onChange={handleChange}
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    <option value="">Select your budget</option>
-                    <option value="under-5k">Under $5,000</option>
-                    <option value="5k-10k">$5,000 - $10,000</option>
-                    <option value="10k-25k">$10,000 - $25,000</option>
-                    <option value="over-25k">Over $25,000</option>
-                  </select>
+                    className="w-full"
+                    placeholder="#12345"
+                  />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="mb-2 block text-sm font-medium text-foreground">
-                    Project Details *
+                    Your Message *
                   </label>
                   <Textarea
                     id="message"
@@ -160,7 +158,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     rows={6}
                     className="w-full"
-                    placeholder="Tell us about your project, goals, and timeline..."
+                    placeholder="Please provide as much detail as possible..."
                   />
                 </div>
 
@@ -176,7 +174,7 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div>
               <h2 className="mb-6 text-2xl font-bold text-foreground">
-                Contact Information
+                Other Ways to Reach Us
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
@@ -184,9 +182,11 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="mb-1 font-semibold text-foreground">Email</h3>
-                    <p className="text-muted-foreground">contact@blueonlinestores.com</p>
+                    <h3 className="mb-1 font-semibold text-foreground">Email Support</h3>
                     <p className="text-muted-foreground">support@blueonlinestores.com</p>
+                    <p className="text-sm text-muted-foreground">
+                      We typically respond within 2-4 hours
+                    </p>
                   </div>
                 </div>
 
@@ -195,10 +195,11 @@ export default function ContactPage() {
                     <Phone className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="mb-1 font-semibold text-foreground">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <h3 className="mb-1 font-semibold text-foreground">Customer Service</h3>
+                    <p className="text-muted-foreground">1-800-BLUE-SHOP (258-3746)</p>
                     <p className="text-sm text-muted-foreground">
-                      Monday - Friday, 9AM - 6PM EST
+                      Monday - Friday: 8AM - 8PM EST<br />
+                      Saturday - Sunday: 10AM - 6PM EST
                     </p>
                   </div>
                 </div>
@@ -208,9 +209,9 @@ export default function ContactPage() {
                     <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="mb-1 font-semibold text-foreground">Office</h3>
-                    <p className="text-muted-foreground">123 Business Avenue</p>
-                    <p className="text-muted-foreground">Suite 456</p>
+                    <h3 className="mb-1 font-semibold text-foreground">Mailing Address</h3>
+                    <p className="text-muted-foreground">Blue Online Stores</p>
+                    <p className="text-muted-foreground">123 Commerce Street</p>
                     <p className="text-muted-foreground">New York, NY 10001</p>
                   </div>
                 </div>
@@ -219,28 +220,28 @@ export default function ContactPage() {
               {/* Response Time */}
               <div className="mt-12 rounded-xl bg-primary/5 p-6">
                 <h3 className="mb-3 text-lg font-semibold text-foreground">
-                  Quick Response Guarantee
+                  Fast Response Times
                 </h3>
                 <p className="text-muted-foreground">
-                  We respond to all inquiries within 24 hours during business days.
-                  For urgent matters, please call us directly.
+                  Our customer support team typically responds within 24 hours, but often
+                  much faster. For urgent order issues, call us directly for immediate assistance.
                 </p>
               </div>
 
               {/* FAQ Link */}
               <div className="mt-6 rounded-xl border border-border bg-white p-6">
                 <h3 className="mb-3 text-lg font-semibold text-foreground">
-                  Have Questions First?
+                  Need Help Right Now?
                 </h3>
                 <p className="mb-4 text-muted-foreground">
-                  Check out our FAQ section or schedule a free consultation call
-                  to discuss your project in detail.
+                  Check out our Help Center for answers to common questions about
+                  orders, shipping, returns, and more.
                 </p>
                 <Button
                   variant="outline"
                   className="rounded-full border-primary text-primary hover:bg-primary hover:text-white"
                 >
-                  Schedule Consultation
+                  Visit Help Center
                 </Button>
               </div>
             </div>

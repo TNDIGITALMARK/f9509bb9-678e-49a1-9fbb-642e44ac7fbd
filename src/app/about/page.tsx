@@ -14,8 +14,8 @@ export default function AboutPage() {
             About Blue Online Stores
           </h1>
           <p className="text-lg text-muted-foreground">
-            We&apos;re on a mission to make e-commerce success accessible to businesses
-            of all sizes through professional design, expert guidance, and ongoing support.
+            Your destination for quality products, exceptional service, and
+            a shopping experience you&apos;ll love. Discover what makes us different.
           </p>
         </div>
       </section>
@@ -28,20 +28,19 @@ export default function AboutPage() {
           </h2>
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Founded in 2018, Blue Online Stores was born from a simple observation: too many
-              great businesses were struggling to establish a strong online presence. Traditional
-              e-commerce solutions were either too expensive, too complicated, or lacked the
-              personal touch needed for success.
+              Founded in 2018, Blue Online Stores started with a simple belief: online shopping
+              should be easy, enjoyable, and trustworthy. We were tired of confusing checkout
+              processes, unreliable shipping, and impersonal customer service.
             </p>
             <p>
-              We set out to change that. Our team of designers, developers, and e-commerce
-              strategists came together with a shared vision: to create beautiful, functional
-              online stores that drive real results for our clients.
+              So we created something better. A place where quality products meet exceptional
+              service. Where every order is treated with care. Where your satisfaction isn&apos;t
+              just a goal—it&apos;s our promise.
             </p>
             <p>
-              Today, we&apos;ve helped over 200 businesses launch and grow their online presence.
-              From local boutiques to international retailers, our clients trust us to deliver
-              exceptional results every time.
+              Today, thousands of happy customers trust us for their online shopping needs.
+              From everyday essentials to special finds, we&apos;re here to make your life
+              easier, one order at a time.
             </p>
           </div>
         </div>
@@ -51,7 +50,7 @@ export default function AboutPage() {
       <section className="bg-background py-16">
         <div className="container mx-auto max-w-7xl px-6">
           <h2 className="mb-12 text-center text-3xl font-bold text-foreground">
-            Our Values
+            Why Shop With Us?
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             <div className="rounded-xl bg-white p-8 text-center shadow-sm">
@@ -60,10 +59,10 @@ export default function AboutPage() {
                   <Target className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="mb-3 text-xl font-bold text-foreground">Excellence</h3>
+              <h3 className="mb-3 text-xl font-bold text-foreground">Quality First</h3>
               <p className="text-muted-foreground">
-                We never settle for &quot;good enough.&quot; Every project receives our full
-                dedication to delivering exceptional quality and results.
+                Every product is carefully selected and vetted. We stand behind everything
+                we sell with our satisfaction guarantee.
               </p>
             </div>
 
@@ -73,10 +72,10 @@ export default function AboutPage() {
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="mb-3 text-xl font-bold text-foreground">Partnership</h3>
+              <h3 className="mb-3 text-xl font-bold text-foreground">Customer Care</h3>
               <p className="text-muted-foreground">
-                Your success is our success. We work as an extension of your team,
-                invested in your long-term growth and prosperity.
+                Real people, real support. Our friendly team is here to help with
+                any questions or concerns, before and after your purchase.
               </p>
             </div>
 
@@ -86,31 +85,30 @@ export default function AboutPage() {
                   <Zap className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <h3 className="mb-3 text-xl font-bold text-foreground">Innovation</h3>
+              <h3 className="mb-3 text-xl font-bold text-foreground">Fast & Reliable</h3>
               <p className="text-muted-foreground">
-                E-commerce is constantly evolving. We stay ahead of trends to ensure
-                your store leverages the latest technology and best practices.
+                Quick processing, secure checkout, and reliable shipping. Get what
+                you ordered, when we promise to deliver it.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Customer Promise Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto max-w-4xl px-6 text-center">
           <h2 className="mb-8 text-3xl font-bold text-foreground">
-            Meet Our Expert Team
+            Our Promise to You
           </h2>
           <p className="mb-12 text-lg text-muted-foreground">
-            Our diverse team brings together decades of combined experience in
-            e-commerce, design, development, and digital marketing.
+            Shopping online should be simple, secure, and enjoyable. That&apos;s why we&apos;ve built
+            our entire business around making sure you have the best experience possible.
           </p>
           <div className="rounded-xl bg-gradient-to-br from-primary/5 to-background p-8">
             <p className="text-xl font-semibold text-foreground">
-              &quot;We believe every business deserves a professional online presence
-              that drives real results. That&apos;s why we pour our hearts into every
-              project we take on.&quot;
+              &quot;Your satisfaction is our top priority. We&apos;re not happy until
+              you&apos;re thrilled with your purchase. That&apos;s the Blue Online Stores difference.&quot;
             </p>
             <p className="mt-4 text-muted-foreground">- The Blue Online Stores Team</p>
           </div>
